@@ -1,0 +1,249 @@
+{
+    "data": [
+        {
+            "data": {
+                "title": "Dashbaord",
+                "type": "Item",
+                "icon": "home",
+                "url": "/dashboard"
+            },
+            "children": []
+        },
+        {
+            "data": {
+                "title": "Master Data",
+                "type": "collapsable",
+                "icon": "store",
+                "url": ""
+            },
+            "children": [
+                {
+                    "data": {
+                        "title": "Brand",
+                        "type": "item",
+                        "icon": "",
+                        "url": "/master-data/brand"
+                    }
+                },
+                {
+                    "data": {
+                        "title": "Customer",
+                        "type": "item",
+                        "icon": "",
+                        "url": "/master-data/customer"
+                    }
+                },
+                {
+                    "data": {
+                        "title": "Customer Catogory",
+                        "type": "item",
+                        "icon": "",
+                        "url": "/master-data/customer-catogory"
+                    }
+                },
+                {
+                    "data": {
+                        "title": "Item Category",
+                        "type": "item",
+                        "icon": "",
+                        "url": "/master-data/item-category"
+                    }
+                },
+                {
+                    "data": {
+                        "title": "Products",
+                        "type": "item",
+                        "icon": "",
+                        "url": "/master-data/products"
+                    }
+                },
+                {
+                    "data": {
+                        "title": "Supplier",
+                        "type": "item",
+                        "icon": "",
+                        "url": "/master-data/supplier"
+                    }
+                },
+                {
+                    "data": {
+                        "title": "Extra Cost",
+                        "type": "item",
+                        "icon": "",
+                        "url": "/master-data/extra-cost"
+                    }
+                },
+                {
+                    "data": {
+                        "title": "Employee",
+                        "type": "item",
+                        "icon": "",
+                        "url": "/master-data/employee"
+                    }
+                },
+                {
+                    "data": {
+                        "title": "Stock Modifier",
+                        "type": "item",
+                        "icon": "",
+                        "url": "/master-data/stock-modifier"
+                    }
+                }
+            ]
+        },
+        {
+            "data": {
+                "title": "Purchasing",
+                "type": "collapsable",
+                "icon": "add_shopping_cart",
+                "url": ""
+            },
+            "children": [
+                {
+                    "data": {
+                        "title": "Purchase Order",
+                        "type": "item",
+                        "icon": "",
+                        "url": "/purchasing/purchase-order"
+                    }
+                },
+                {
+                    "data": {
+                        "title": "Purchase Return",
+                        "type": "item",
+                        "icon": "",
+                        "url": "/purchasing/purchase-retunrn"
+                    }
+                }
+            ]
+        },
+        {
+            "data": {
+                "title": "Sales",
+                "type": "collapsable",
+                "icon": "account_balance_wallet",
+                "url": ""
+            },
+            "children": [
+                {
+                    "data": {
+                        "title": "Sales",
+                        "type": "item",
+                        "icon": "",
+                        "url": "/sales/sales"
+                    }
+                },
+                {
+                    "data": {
+                        "title": "Direct Sales",
+                        "type": "item",
+                        "icon": "",
+                        "url": "/sales/direct-sales"
+                    }
+                },
+                {
+                    "data": {
+                        "title": "Sales Return",
+                        "type": "item",
+                        "icon": "",
+                        "url": "/sales/sales-return"
+                    }
+                },
+                {
+                    "data": {
+                        "title": "Payment",
+                        "type": "item",
+                        "icon": "",
+                        "url": "/sales/payment"
+                    }
+                }
+            ]
+        },
+        {
+            "data": {
+                "title": "Promotion Rules",
+                "type": "item",
+                "icon": "loyalty",
+                "url": "/promotion-rules"
+            },
+            "children": []
+        },
+        {
+            "data": {
+                "title": "Assistant",
+                "type": "collapsable",
+                "icon": "assistant",
+                "url": ""
+            },
+            "children": [
+                {
+                    "data": {
+                        "title": "Purchase Assistant",
+                        "type": "item",
+                        "icon": "",
+                        "url": "/assistant/purchase-assistant"
+                    }
+                },
+                {
+                    "data": {
+                        "title": "Back Order",
+                        "type": "item",
+                        "icon": "",
+                        "url": "/assistant/back-order"
+                    }
+                },
+                {
+                    "data": {
+                        "title": "Inventory",
+                        "type": "item",
+                        "icon": "",
+                        "url": "/assistant/inventory"
+                    }
+                }
+            ]
+        },
+        {
+            "data": {
+                "title": "Report",
+                "type": "item",
+                "icon": "poll",
+                "url": "/report"
+            },
+            "children": []
+        },
+        {
+            "data": {
+                "title": "Account",
+                "type": "collapsable",
+                "icon": "account_box",
+                "url": ""
+            },
+            "children": [
+                {
+                    "data": {
+                        "title": "User Management",
+                        "type": "item",
+                        "icon": "",
+                        "url": "/user-management"
+                    }
+                },
+                {
+                    "data": {
+                        "title": "Menu Management",
+                        "type": "item",
+                        "icon": "",
+                        "url": "/menu-management"
+                    }
+                },
+                {
+                    "data": {
+                        "title": "Role Management",
+                        "type": "item",
+                        "icon": "",
+                        "url": "/role-management"
+                    }
+                }
+            ]
+        }
+    ]
+}
