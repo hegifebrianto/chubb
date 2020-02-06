@@ -12,10 +12,10 @@ export const ROUTES: RouteInfo[] = [
     { path: '/table-list', title: 'Agent List',  icon:'person', class: '' },
     { path: '/files', title: 'Files',  icon:'content_paste', class: '' },
     { path: '/user-profile', title: 'User Profile',  icon:'person', class: '' },
-    { path: '/typography', title: 'Typography',  icon:'library_books', class: '' },
-    { path: '/icons', title: 'Icons',  icon:'bubble_chart', class: '' },
-    { path: '/maps', title: 'Maps',  icon:'location_on', class: '' },
-    { path: '/notifications', title: 'Notifications',  icon:'notifications', class: '' },
+    // { path: '/typography', title: 'Typography',  icon:'library_books', class: '' },
+    // { path: '/icons', title: 'Icons',  icon:'bubble_chart', class: '' },
+    // { path: '/maps', title: 'Maps',  icon:'location_on', class: '' },
+    // { path: '/notifications', title: 'Notifications',  icon:'notifications', class: '' },
     // { path: '/upgrade', title: 'Upgrade to PRO',  icon:'unarchive', class: 'active-pro' }
 ];
 
