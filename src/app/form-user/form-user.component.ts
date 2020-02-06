@@ -16,18 +16,14 @@ export class FormUserComponent implements OnInit {
   ) { }
   roleData = [{
     id: '10',
-    roleName: "SAM"
+    roleName: "Super Administrator"
   }, {
     id: '11',
-    roleName: "RAM"
+    roleName: "Administrator"
   }, {
     id: '12',
-    roleName: "AM"
-  },{
-    id: '13',
-    roleName: "Agent"
+    roleName: "Head Departement of Agency"
   }
-
   ];
   agentFormGroup: FormGroup;
 
