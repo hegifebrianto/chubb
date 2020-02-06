@@ -23,7 +23,7 @@ export class TableListComponent implements OnInit {
 
   ngOnInit() {
 
-    this.http.get('/assets/data/agent.json')
+    this.http.get('/assets/data/ag.json')
       .subscribe((response: any) => {
         console.log(response);
         this.dataRow = response.data;

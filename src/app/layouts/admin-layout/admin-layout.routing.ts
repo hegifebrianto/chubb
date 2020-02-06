@@ -11,6 +11,8 @@ import { UpgradeComponent } from '../../upgrade/upgrade.component';
 import { LoginComponent } from 'app/login/login.component';
 import { FormAgentComponent } from 'app/form-agent/form-agent.component';
 import { UserListComponent } from 'app/user-list/user-list.component';
+import { FilesComponent } from 'app/files/files.component';
+import { UploadFileComponent } from 'app/upload-file/upload-file.component';
 
 export const AdminLayoutRoutes: Routes = [
     // {
@@ -65,4 +67,6 @@ export const AdminLayoutRoutes: Routes = [
     { path: 'upgrade',        component: UpgradeComponent },
     { path: 'form-agent',        component: FormAgentComponent },
     { path: 'user-list',        component: UserListComponent },
+    { path: 'files',        component: FilesComponent },
+    { path: 'upload-file',        component: UploadFileComponent },
 ];

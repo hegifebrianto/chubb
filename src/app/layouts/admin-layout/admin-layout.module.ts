@@ -12,7 +12,7 @@ import { IconsComponent } from '../../icons/icons.component';
 import { NotificationsComponent } from '../../notifications/notifications.component';
 import { UpgradeComponent } from '../../upgrade/upgrade.component';
 import {TreeTableModule} from 'primeng/treetable';
-import {TreeNode} from 'primeng/api';
+import {FileUploadModule} from 'primeng/fileupload';
 
 import {
   MatButtonModule,
@@ -21,10 +21,14 @@ import {
   MatFormFieldModule,
   MatTooltipModule,
   MatSelectModule,
+  MatDatepickerModule,
+  MatNativeDateModule,
   MatIconModule
 } from '@angular/material';
 import { HttpModule } from '@angular/http';
 import { HttpClientModule } from '@angular/common/http';
+import { FilesComponent } from 'app/files/files.component';
+import { UploadFileComponent } from 'app/upload-file/upload-file.component';
 import { FormAgentComponent } from 'app/form-agent/form-agent.component';
 import { UserListComponent } from 'app/user-list/user-list.component';
 @NgModule({
@@ -42,8 +46,10 @@ import { UserListComponent } from 'app/user-list/user-list.component';
     HttpModule,
     HttpClientModule,
     TreeTableModule,
-    MatIconModule,
-
+    MatDatepickerModule,
+    MatNativeDateModule,
+    FileUploadModule,
+    MatIconModule
   ],
   declarations: [
     DashboardComponent,
@@ -54,10 +60,11 @@ import { UserListComponent } from 'app/user-list/user-list.component';
     // MapsComponent,
     NotificationsComponent,
     UpgradeComponent,
+    FilesComponent,
+    UploadFileComponent,
     FormAgentComponent,
     UserListComponent
-  ],
- 
+  ]
 })
 
 export class AdminLayoutModule {}

@@ -1,0 +1,49 @@
+<div class="main-content">
+  <div class="container-fluid">
+    <div class="row mb-4">
+      <div class="col-md-12 text-right">
+          <button [routerLink]="['/upload-file']" mat-raised-button class="btn btn-primary"><i class="material-icons">cloud_upload</i>&nbsp; Upload File</button>
+      </div>
+    </div>
+    <div class="row">
+
+      <!-- files list  -->
+      <div *ngFor="let item of files" class="col-md-3">
+        <div class="card">
+          <div class="card-header card-header-icon card-header-danger">
+            <div class="card-icon">
+              <i *ngIf="item.filetype === 'pdf'" class="material-icons">picture_as_pdf</i>
+              <i *ngIf="item.filetype == 'jpg' || item.filetype == 'jpeg' || item.filetype == 'png'" class="material-icons">photo</i>
+              <i *ngIf="item.filetype == 'doc' || item.filetype == 'docs' || item.filetype == 'xls' || item.filetype == 'xlsx' || item.filetype == 'ppt' || item.filetype == 'pptx'" class="material-icons">library_books</i>
+              <i *ngIf="item.filetype == 'zip' || item.filetype == 'rar'" class="material-icons">insert_drive_file</i>
+              <i *ngIf="item.filetype != 'pdf' && item.filetype != 'jpg' && item.filetype != 'png' && item.filetype != 'jpeg' && item.filetype != 'doc' && item.filetype != 'docs' && item.filetype != 'xls' && item.filetype != 'xlsx' && item.filetype != 'ppt' && item.filetype != 'pptx' && item.filetype != 'zip' && item.filetype != 'rar'" class="material-icons">attach_file</i>
+            </div>
+            <h4 class="card-title"><strong>{{item.fileName}}</strong></h4>
+          </div>
+          <div class="card-body">
+            <h6>Expired {{item.expired}}</h6>
+            <p>{{item.description}}</p>
+            <div class="row info">
+              <div class="col-md-6">
+                <h6>{{item.userAccess}} Users can access</h6>
+              </div>
+              <div class="col-md-6 right">
+                <h6>{{item.fileSize}}</h6>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <button mat-stroked-button class="full-width" color="primary">Edit</button>
+              </div>
+              <div class="col-md-6">
+                <button (click)="download(item)" mat-stroked-button class="full-width" color="primary">Download</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</div>

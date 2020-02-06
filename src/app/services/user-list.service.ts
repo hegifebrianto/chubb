@@ -17,4 +17,8 @@ export class UserListService {
   getRoleData() {
     return this.http.get(this.apiConfig.apiUrl + 'api/v1/role');
   }
+
+  saveAgent(data) {
+    return this.http.post(this.apiConfig.apiUrl + 'api/v1/users', data);
+  }
 }
