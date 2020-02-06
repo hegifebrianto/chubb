@@ -56,3 +56,13 @@ body .ui-button {
   background-color: #424242;
   box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 6px 10px -5px rgb(66, 66, 66, 0.4);
 }
+
+.sidebar .logo-img img {
+  width: 12rem;
+  top: 35px;
+  position: absolute;
+}
+
+.sidebar .logo {
+  padding: 40px 0px;
+}
