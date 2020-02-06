@@ -12,7 +12,6 @@
                         <p-treeTable [value]="dataRow" [columns]="cols" class="material-table">
                             <ng-template pTemplate="header" let-columns>
                               <tr [ttRow]="rowNode">
-                                <th width="120">#</th>
                                 <th *ngFor="let col of columns">
                                   {{col.header}}
                                 </th>
@@ -20,10 +19,7 @@
                             </ng-template>
                             <ng-template pTemplate="body" let-rowNode let-rowData="rowData" let-columns="columns">
                               <tr>
-                                <td>
-                                  <!-- <mat-icon matTooltip="Delete" (click)="deleteData(rowData)" class="s-20 mr-16">delete</mat-icon>
-                                  <mat-icon matTooltip="Edit" (click)="editData(rowData)" class="s-20 mr-16">edit</mat-icon> -->
-                                </td>
+   
                                 <td *ngFor="let col of columns; let i = index">
                                   <p-treeTableToggler [rowNode]="rowNode" *ngIf="i == 0"></p-treeTableToggler>
                                   {{rowData[col.field]}}

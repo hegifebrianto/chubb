@@ -12,7 +12,7 @@ import { IconsComponent } from '../../icons/icons.component';
 import { NotificationsComponent } from '../../notifications/notifications.component';
 import { UpgradeComponent } from '../../upgrade/upgrade.component';
 import {TreeTableModule} from 'primeng/treetable';
-import {TreeNode} from 'primeng/api';
+import {FileUploadModule} from 'primeng/fileupload';
 
 import {
   MatButtonModule,
@@ -20,10 +20,14 @@ import {
   MatRippleModule,
   MatFormFieldModule,
   MatTooltipModule,
-  MatSelectModule
+  MatSelectModule,
+  MatDatepickerModule,
+  MatNativeDateModule
 } from '@angular/material';
 import { HttpModule } from '@angular/http';
 import { HttpClientModule } from '@angular/common/http';
+import { FilesComponent } from 'app/files/files.component';
+import { UploadFileComponent } from 'app/upload-file/upload-file.component';
 @NgModule({
   imports: [
     CommonModule,
@@ -38,7 +42,10 @@ import { HttpClientModule } from '@angular/common/http';
     MatTooltipModule,
     HttpModule,
     HttpClientModule,
-    TreeTableModule
+    TreeTableModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    FileUploadModule
   ],
   declarations: [
     DashboardComponent,
@@ -48,7 +55,9 @@ import { HttpClientModule } from '@angular/common/http';
     IconsComponent,
     // MapsComponent,
     NotificationsComponent,
-    UpgradeComponent
+    UpgradeComponent,
+    FilesComponent,
+    UploadFileComponent
   ]
 })
 

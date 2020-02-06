@@ -21,16 +21,16 @@ export class TableListComponent implements OnInit {
 
   ngOnInit() {
 
-    this.http.get('/assets/data/agent.json')
+    this.http.get('/assets/data/ag.json')
       .subscribe((response: any) => {
         this.dataRow = response.data;
       });
 
     this.cols = [
-      { field: 'title', header: 'Title' },
-      { field: 'type', header: 'Type' },
-      { field: 'icon', header: 'Icon' },
-      { field: 'url', header: 'Url' }
+      { field: 'name', header: 'Name' },
+      { field: 'email', header: 'Email' },
+      { field: 'phone', header: 'Phone' },
+      { field: 'role', header: 'Role' }
     ];
 
   }

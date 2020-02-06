@@ -1,16 +1,40 @@
-<div class="login">
-  <div class="row">
-    <div class="col-md-12">
-      <div class="card">
-        <div class="card-header card-header-danger">
-          <h4 class="card-title">Full header coloured</h4>
-          <p class="card-category">Category subtitle</p>
-        </div>
-        <div class="card-body">
-          The place is close to Barceloneta Beach and bus stop just 2 min by walk and near to "Naviglio" where you can
-          enjoy the main night life in Barcelona...
+<div class="container">
+    <div class="login">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-header card-header-info">
+                <h2 class="card-title"><strong>CHUBB POC</strong></h2>
+                <p class="card-category">Please input username and password</p>
+              </div>
+              <div class="card-body content">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <mat-form-field class="example-full-width">
+                      <span matPrefix>
+                        <mat-icon matSuffix>account_circle</mat-icon> &nbsp;
+                      </span>
+                      <input matInput type="text" placeholder="Username/email">
+                    </mat-form-field>
+                  </div>
+                  <div class="col-sm-12">
+                    <mat-form-field class="example-full-width">
+                      <span matPrefix>
+                        <mat-icon matSuffix>lock</mat-icon> &nbsp;
+                      </span>
+                      <input matInput type="password" placeholder="Password">
+                      <mat-icon matSuffix>remove_red_eye</mat-icon>
+                    </mat-form-field>
+                  </div>
+                  <div class="col-sm-12 login">
+                    <button [routerLink]="['/dashboard']" mat-raised-button class="btn btn-primary full-width btn-lg">Login</button>
+                  </div>
+      
+      
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
 </div>
