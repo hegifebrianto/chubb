@@ -20,10 +20,13 @@ import {
   MatRippleModule,
   MatFormFieldModule,
   MatTooltipModule,
-  MatSelectModule
+  MatSelectModule,
+  MatIconModule
 } from '@angular/material';
 import { HttpModule } from '@angular/http';
 import { HttpClientModule } from '@angular/common/http';
+import { FormAgentComponent } from 'app/form-agent/form-agent.component';
+import { UserListComponent } from 'app/user-list/user-list.component';
 @NgModule({
   imports: [
     CommonModule,
@@ -38,7 +41,9 @@ import { HttpClientModule } from '@angular/common/http';
     MatTooltipModule,
     HttpModule,
     HttpClientModule,
-    TreeTableModule
+    TreeTableModule,
+    MatIconModule,
+
   ],
   declarations: [
     DashboardComponent,
@@ -48,8 +53,11 @@ import { HttpClientModule } from '@angular/common/http';
     IconsComponent,
     // MapsComponent,
     NotificationsComponent,
-    UpgradeComponent
-  ]
+    UpgradeComponent,
+    FormAgentComponent,
+    UserListComponent
+  ],
+ 
 })
 
 export class AdminLayoutModule {}

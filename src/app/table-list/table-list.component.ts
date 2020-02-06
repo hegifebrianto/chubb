@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { TreeNode } from 'primeng/api';
 import { HttpClient } from '@angular/common/http';
+import { UserListService } from 'app/services/user-list.service';
 
 @Component({
   selector: 'app-table-list',
@@ -15,24 +16,35 @@ export class TableListComponent implements OnInit {
 
   constructor(
     private http: HttpClient,
+    private userService: UserListService
   ) {
 
- }
+  }
 
   ngOnInit() {
 
     this.http.get('/assets/data/agent.json')
       .subscribe((response: any) => {
+        console.log(response);
         this.dataRow = response.data;
+        console.log(this.dataRow);
+      });
+
+    this.userService.getRoleData().subscribe(
+      (result: any) => {
+        console.log(result);
       });
 
     this.cols = [
-      { field: 'title', header: 'Title' },
-      { field: 'type', header: 'Type' },
-      { field: 'icon', header: 'Icon' },
-      { field: 'url', header: 'Url' }
+      { field: 'name', header: 'Name' },
+      { field: 'role', header: 'Role' },
+      { field: 'email', header: 'Email' },
+      { field: 'phone', header: 'Phone' },
     ];
 
+  }
+  download() {
+    console.log('data');
   }
 
 }

@@ -23,6 +23,10 @@ import {
 } from '@agm/core';
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
 import { LoginComponent } from './login/login.component';
+import { UserListComponent } from './user-list/user-list.component';
+import { HttpClientModule } from '@angular/common/http';
+import { AppConfig } from './services/common.app-config.service';
+
 
 @NgModule({
   imports: [
@@ -33,6 +37,7 @@ import { LoginComponent } from './login/login.component';
     ComponentsModule,
     RouterModule,
     AppRoutingModule,
+    HttpClientModule
     // AgmCoreModule.forRoot({
     //   apiKey: 'YOUR_GOOGLE_MAPS_API_KEY'
     // })
@@ -40,10 +45,11 @@ import { LoginComponent } from './login/login.component';
   declarations: [
     AppComponent,
     AdminLayoutComponent,
-    LoginComponent
-
+    LoginComponent,
   ],
-  providers: [],
+  providers: [
+    AppConfig
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

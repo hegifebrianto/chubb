@@ -1,40 +1,51 @@
 <div class="main-content">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="card">
-                    <div class="card-header card-header-danger">
-                        <h4 class="card-title ">Simple Table</h4>
-                        <p class="card-category"> Here is a subtitle for this table</p>
-                    </div>
-                    <div class="card-body">
-
-                        <p-treeTable [value]="dataRow" [columns]="cols" class="material-table">
-                            <ng-template pTemplate="header" let-columns>
-                              <tr [ttRow]="rowNode">
-                                <th width="120">#</th>
-                                <th *ngFor="let col of columns">
-                                  {{col.header}}
-                                </th>
-                              </tr>
-                            </ng-template>
-                            <ng-template pTemplate="body" let-rowNode let-rowData="rowData" let-columns="columns">
-                              <tr>
-                                <td>
-                                  <!-- <mat-icon matTooltip="Delete" (click)="deleteData(rowData)" class="s-20 mr-16">delete</mat-icon>
-                                  <mat-icon matTooltip="Edit" (click)="editData(rowData)" class="s-20 mr-16">edit</mat-icon> -->
-                                </td>
-                                <td *ngFor="let col of columns; let i = index">
-                                  <p-treeTableToggler [rowNode]="rowNode" *ngIf="i == 0"></p-treeTableToggler>
-                                  {{rowData[col.field]}}
-                                </td>
-                              </tr>
-                            </ng-template>
-                          </p-treeTable>
-
-                    </div>
-                </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-header card-header-danger">
+            <div class="row">
+              <div class="col-sm-8">
+                <h4 class="card-title ">User Table</h4>
+                <p class="card-category"> User table registered</p>
+              </div>
+              <div class="col-sm-4 justify-right">
+                <button mat-raised-button class="btn btn-primary"  [routerLink]="['/form-agent']">
+                  <i class="material-icons">add</i> Add Agent
+                </button>
+              </div>
             </div>
+
+          </div>
+          <div class="card-body">
+
+            <p-treeTable [value]="dataRow" [columns]="cols" class="material-table">
+              <ng-template pTemplate="header" let-columns>
+                <tr [ttRow]="rowNode">
+                  <th *ngFor="let col of columns">
+                    {{col.header}}
+                  </th>
+                  <th> Action </th>
+                </tr>
+              </ng-template>
+              <ng-template pTemplate="body" let-rowNode let-rowData="rowData" let-columns="columns">
+                <tr>
+                  <td *ngFor="let col of columns; let i = index">
+                    <p-treeTableToggler [rowNode]="rowNode" *ngIf="i == 0"></p-treeTableToggler>
+                    {{rowData[col.field]}}
+                  </td>
+                  <td>
+                    <mat-icon matTooltip="Folder" (click)="download()" class="s-20 mr-16 hover-class">folder</mat-icon>
+
+                    <!-- <mat-icon matTooltip="Delete"  class="s-20 mr-16">delete</mat-icon> -->
+                  </td>
+                </tr>
+              </ng-template>
+            </p-treeTable>
+
+          </div>
         </div>
+      </div>
     </div>
+  </div>
 </div>
