@@ -1,20 +1,19 @@
 import { Component, OnInit } from '@angular/core';
-import { UserListService } from 'app/services/user-list.service';
 import { FormGroup, FormBuilder } from '@angular/forms';
+import { UserListService } from 'app/services/user-list.service';
 
 @Component({
-  selector: 'app-form-agent',
-  templateUrl: './form-agent.component.html',
-  styleUrls: ['./form-agent.component.scss']
+  selector: 'app-form-user',
+  templateUrl: './form-user.component.html',
+  styleUrls: ['./form-user.component.scss']
 })
-export class FormAgentComponent implements OnInit {
+export class FormUserComponent implements OnInit {
 
   constructor(
     private userService: UserListService,
     public formBuilder: FormBuilder,
 
   ) { }
-
   roleData = [{
     id: '10',
     roleName: "SAM"
@@ -64,5 +63,6 @@ export class FormAgentComponent implements OnInit {
       alert(response);
     })
   }
+
 
 }

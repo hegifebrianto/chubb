@@ -26,6 +26,7 @@ import { LoginComponent } from './login/login.component';
 import { MatInputModule, MatIconModule } from '@angular/material';
 import { AppConfig } from './services/common.app-config.service';
 import { HttpClientModule } from '@angular/common/http';
+import { FormUserComponent } from './form-user/form-user.component';
 
 @NgModule({
   imports: [
@@ -47,6 +48,7 @@ import { HttpClientModule } from '@angular/common/http';
     AppComponent,
     AdminLayoutComponent,
     LoginComponent,
+
   ],
   providers: [
     AppConfig

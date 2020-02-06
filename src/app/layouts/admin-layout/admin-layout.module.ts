@@ -23,7 +23,8 @@ import {
   MatSelectModule,
   MatDatepickerModule,
   MatNativeDateModule,
-  MatIconModule
+  MatIconModule,
+  MatOptionModule
 } from '@angular/material';
 import { HttpModule } from '@angular/http';
 import { HttpClientModule } from '@angular/common/http';
@@ -31,6 +32,7 @@ import { FilesComponent } from 'app/files/files.component';
 import { UploadFileComponent } from 'app/upload-file/upload-file.component';
 import { FormAgentComponent } from 'app/form-agent/form-agent.component';
 import { UserListComponent } from 'app/user-list/user-list.component';
+import { FormUserComponent } from 'app/form-user/form-user.component';
 @NgModule({
   imports: [
     CommonModule,
@@ -49,7 +51,9 @@ import { UserListComponent } from 'app/user-list/user-list.component';
     MatDatepickerModule,
     MatNativeDateModule,
     FileUploadModule,
-    MatIconModule
+    MatIconModule,
+    MatOptionModule
+    
   ],
   declarations: [
     DashboardComponent,
@@ -63,7 +67,8 @@ import { UserListComponent } from 'app/user-list/user-list.component';
     FilesComponent,
     UploadFileComponent,
     FormAgentComponent,
-    UserListComponent
+    UserListComponent,
+    FormUserComponent
   ]
 })
 
